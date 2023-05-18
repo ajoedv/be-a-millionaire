@@ -58,12 +58,15 @@ def game_loop():
 
 
     # Function for checking the answer
+    def check_answer(question, user_answer):
 
 
     # Function for getting user's answer
+    def get_user_answer():
 
 
     # Function for handling a single question
+    def ask_question(question):
 
 
         # Get user's answer
