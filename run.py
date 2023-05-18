@@ -112,6 +112,13 @@ def game_loop():
 
         current_question += 1
 
+        # Check if the player becomes a millionaire
+        if money >= 1000000:
+            print("---------------------------------------------------")
+            print("Congratulations,", player_name +
+                  "! You become a millionaire!")
+            print("---------------------------------------------------")
+            break
 
     # Game ended
     print("---------------------------------------------------")
