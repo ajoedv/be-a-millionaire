@@ -38,21 +38,14 @@ def get_player_name():
         blue_text()
         player_name = input("Enter your name: ")
         color_rest()
-        if len(player_name) == 0 or len(player_name) > 10 or len(player_name) < 3:
+        if not (3 <= len(player_name) <= 10) or not player_name.isalpha():
             raise ValueError
-        if not player_name.isalpha():
-            red_text()
-            print("Invalid input! Please enter a valid name (letters only).")
-            color_rest()
-            return get_player_name()
-        else:
-            return player_name.capitalize()
+        return player_name.capitalize()
     except ValueError:
         red_text()
-        print("Invalid input! Please enter a valid name (Between 3 to 10 characters).")
+        print("Invalid input! Please enter a valid name (between 3 to 10 alphabetic characters).")
         color_rest()
         return get_player_name()
-
 
 player_name = get_player_name()
 
