@@ -114,6 +114,10 @@ def game_loop():
 
 
     # Game ended
+    print("---------------------------------------------------")
+    print("Game Over!")
+    print("Total winnings: ", money, " $")
+    print("---------------------------------------------------")
 
 
     # Ask if the player wants to play again
