@@ -105,6 +105,12 @@ def game_loop():
 
 
     # Game loop
+    while current_question < total_questions:
+        question = questions.questions[current_question]
+        if not ask_question(question):
+            break
+
+        current_question += 1
 
 
     # Game ended
