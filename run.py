@@ -43,9 +43,11 @@ def get_player_name():
         return player_name.capitalize()
     except ValueError:
         red_text()
-        print("Invalid input! Please enter a valid name (between 3 to 10 alphabetic characters).")
+        print("Invalid input! Please enter a valid name"
+              "(between 3 to 10 alphabetic characters).")
         color_rest()
         return get_player_name()
+
 
 player_name = get_player_name()
 
@@ -89,7 +91,8 @@ def game_loop():
     random.shuffle(questions.questions)
 
     # Define the money increment pattern
-    money_increments = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000]
+    money_increments = [100, 200, 300, 500, 1000, 2000, 4000, 8000,
+                        16000, 32000, 64000, 125000, 250000, 500000, 1000000]
 
     # Function for checking the answer
     def check_answer(question, user_answer):
@@ -187,14 +190,16 @@ def game_loop():
                 break
             elif play_again == 0:
                 red_text()
-                print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
+                print("Invalid input. Please enter 'y' to"
+                      "play again or 'n' to quit.")
                 color_rest()
             else:
                 raise ValueError
 
         except ValueError:
             red_text()
-            print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
+            print("Invalid input. Please enter 'y' to"
+                  "play again or 'n' to quit.")
             color_rest()
 
 
