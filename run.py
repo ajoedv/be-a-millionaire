@@ -96,9 +96,12 @@ def game_loop():
 
 
         # Get user's answer
-
+        user_answer = get_user_answer()
+        while user_answer is None:
+            user_answer = get_user_answer()
 
         # Check if the answer is correct
+        return check_answer(question, user_answer)
 
 
     # Game loop
