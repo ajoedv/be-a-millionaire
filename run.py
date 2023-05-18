@@ -1,5 +1,7 @@
 import random
 import questions
+from colorama import Fore, Back, Style
+
 
 # Get player name
 def get_player_name():
