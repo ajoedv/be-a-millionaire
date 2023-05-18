@@ -44,6 +44,7 @@ input("Press Enter to start the game.")
 # Game loop
 def game_loop():
     # Initialize variables
+    total_questions = len(questions.questions)
 
 
     # Shuffle the questions
