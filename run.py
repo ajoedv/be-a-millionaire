@@ -3,8 +3,18 @@ import questions
 
 # Get player name
 def get_player_name():
-    player_name = input("Enter your name: ")
-    return get_player_name()
+    try:
+        player_name = input("Enter your name: ")
+        if len(player_name) == 0 or len(player_name) > 10 or len(player_name) < 3:
+            raise ValueError
+        if not player_name.isalpha():
+            print("Invalid input! Please enter a valid name (letters only).")
+            return get_player_name()
+        else:
+            return player_name.capitalize()
+    except ValueError:
+        print("Invalid input! Please enter a valid name (Between 3 to 10 characters).")
+        return get_player_name()
 
 
 # welcoming
