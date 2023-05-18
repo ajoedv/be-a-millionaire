@@ -26,6 +26,19 @@ print("---------------------------------------------------")
 
 
 # Game rules
+print("---------------------------------------------------")
+print("Game Rules:")
+print("1. You will be asked a series of multiple-choice questions.")
+print("2. Choose the correct answer by"
+      "entering the corresponding letter (a, b, c, d).")
+print("3. If you answer a question correctly,"
+      "you will win the corresponding amount of money.")
+print("4. If you answer a question incorrectly,"
+      "the game is over.")
+print("5. If you reach the $1,000,000 question"
+      "and answer it correctly, you will become a millionaire!")
+print("---------------------------------------------------")
+input("Press Enter to start the game.")
 
 
 # Game loop
