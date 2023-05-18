@@ -2,6 +2,9 @@ import random
 import questions
 
 # Get player name
+def get_player_name():
+    player_name = input("Enter your name: ")
+    return get_player_name()
 
 
 # welcoming
