@@ -121,6 +121,23 @@ def game_loop():
 
 
     # Ask if the player wants to play again
+    while True:
+        try:
+            play_again = input("Do you want to play again? (y/n): ")
+            play_again = play_again.lower()
+            if play_again == "y":
+                game_loop()
+                break
+            elif play_again == "n":
+                print("Thank you for playing Who Wants to Be a Millionaire!")
+                break
+            elif play_again == 0:
+                print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
+            else:
+                raise ValueError
+
+        except ValueError:
+            print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
 
 
 
