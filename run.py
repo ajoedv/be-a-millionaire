@@ -50,6 +50,7 @@ def game_loop():
 
 
     # Shuffle the questions
+    random.shuffle(questions.questions)
 
 
     # Define the money increment pattern
