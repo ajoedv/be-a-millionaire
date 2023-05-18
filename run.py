@@ -53,6 +53,7 @@ def get_player_name():
         color_rest()
         return get_player_name()
 
+
 player_name = get_player_name()
 
 
@@ -91,14 +92,11 @@ def game_loop():
     current_question = 0
     money = 0
 
-
     # Shuffle the questions
     random.shuffle(questions.questions)
 
-
     # Define the money increment pattern
     money_increments = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000, 1000000]
-
 
     # Function for checking the answer
     def check_answer(question, user_answer):
@@ -119,7 +117,6 @@ def game_loop():
             print("---------------------------------------------------")
             return False
 
-
     # Function for getting user's answer
     def get_user_answer():
         try:
@@ -136,7 +133,6 @@ def game_loop():
             color_rest()
             print("---------------------------------------------------")
 
-
     # Function for handling a single question
     def ask_question(question):
         print("---------------------------------------------------")
@@ -147,7 +143,6 @@ def game_loop():
         for option in question["options"]:
             print(option)
 
-
         # Get user's answer
         user_answer = get_user_answer()
         while user_answer is None:
@@ -155,7 +150,6 @@ def game_loop():
 
         # Check if the answer is correct
         return check_answer(question, user_answer)
-
 
     # Game loop
     while current_question < total_questions:
@@ -183,7 +177,6 @@ def game_loop():
     print("---------------------------------------------------")
     color_rest()
 
-
     # Ask if the player wants to play again
     while True:
         try:
@@ -210,7 +203,6 @@ def game_loop():
             red_text()
             print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
             color_rest()
-
 
 
 game_loop()
