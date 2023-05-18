@@ -16,15 +16,15 @@ def blue_text():
     print(Fore.BLUE + '')
 
 
-def red_text():
+def red_text_back():
     print(Back.RED + '')
 
 
-def green_text():
+def green_text_back():
     print(Back.GREEN + '')
 
 
-def blue_text():
+def blue_text_back():
     print(Back.BLUE + '')
 
 
