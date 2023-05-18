@@ -75,6 +75,15 @@ def game_loop():
 
     # Function for getting user's answer
     def get_user_answer():
+        try:
+            user_answer = input("Enter your answer (a, b, c, d): ")
+            if user_answer.lower() not in ['a', 'b', 'c', 'd']:
+                raise ValueError
+            return user_answer.lower()
+        except ValueError:
+            print("---------------------------------------------------")
+            print("Invalid input! Please enter a valid option (a, b, c, d).")
+            print("---------------------------------------------------")
 
 
     # Function for handling a single question
