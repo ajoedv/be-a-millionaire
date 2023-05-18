@@ -3,6 +3,35 @@ import questions
 from colorama import Fore, Back, Style
 
 
+# text color style functions
+def red_text():
+    print(Fore.RED + '')
+
+
+def green_text():
+    print(Fore.GREEN + '')
+
+
+def blue_text():
+    print(Fore.BLUE + '')
+
+
+def red_text():
+    print(Back.RED + '')
+
+
+def green_text():
+    print(Back.GREEN + '')
+
+
+def blue_text():
+    print(Back.BLUE + '')
+
+
+def color_rest():
+    print(Style.RESET_ALL)
+
+
 # Get player name
 def get_player_name():
     try:
