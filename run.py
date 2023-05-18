@@ -36,7 +36,7 @@ def color_rest():
 def get_player_name():
     try:
         blue_text()
-        player_name = input("Enter your name: ")
+        player_name = input("Enter your name: \n")
         color_rest()
         if not (3 <= len(player_name) <= 10) or not player_name.isalpha():
             raise ValueError
@@ -76,7 +76,7 @@ print("5. If you reach the $1,000,000 question"
       "and answer it correctly, you will become a millionaire!")
 print("---------------------------------------------------")
 green_text()
-input("Press Enter to start the game.")
+input("Press Enter to start the game.\n")
 color_rest()
 
 
@@ -117,7 +117,7 @@ def game_loop():
     def get_user_answer():
         try:
             blue_text()
-            user_answer = input("Enter your answer (a, b, c, d): ")
+            user_answer = input("Enter your answer (a, b, c, d): \n")
             color_rest()
             if user_answer.lower() not in ['a', 'b', 'c', 'd']:
                 raise ValueError
@@ -177,7 +177,7 @@ def game_loop():
     while True:
         try:
             blue_text()
-            play_again = input("Do you want to play again? (y/n): ")
+            play_again = input("Do you want to play again? (y/n): \n")
             color_rest()
             play_again = play_again.lower()
             if play_again == "y":
