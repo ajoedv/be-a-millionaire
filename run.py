@@ -20,7 +20,9 @@ player_name = get_player_name()
 
 
 # welcoming
-
+print("---------------------------------------------------")
+print(f"Hello {player_name}! Welcome to Who Wants to Be a Millionaire!")
+print("---------------------------------------------------")
 
 
 # Game rules
