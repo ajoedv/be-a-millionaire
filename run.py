@@ -35,16 +35,22 @@ def color_rest():
 # Get player name
 def get_player_name():
     try:
+        blue_text()
         player_name = input("Enter your name: ")
+        color_rest()
         if len(player_name) == 0 or len(player_name) > 10 or len(player_name) < 3:
             raise ValueError
         if not player_name.isalpha():
+            red_text()
             print("Invalid input! Please enter a valid name (letters only).")
+            color_rest()
             return get_player_name()
         else:
             return player_name.capitalize()
     except ValueError:
+        red_text()
         print("Invalid input! Please enter a valid name (Between 3 to 10 characters).")
+        color_rest()
         return get_player_name()
 
 player_name = get_player_name()
@@ -52,13 +58,17 @@ player_name = get_player_name()
 
 # welcoming
 print("---------------------------------------------------")
+blue_text()
 print(f"Hello {player_name}! Welcome to Who Wants to Be a Millionaire!")
+color_rest()
 print("---------------------------------------------------")
 
 
 # Game rules
 print("---------------------------------------------------")
+red_text()
 print("Game Rules:")
+color_rest()
 print("1. You will be asked a series of multiple-choice questions.")
 print("2. Choose the correct answer by"
       "entering the corresponding letter (a, b, c, d).")
@@ -69,7 +79,9 @@ print("4. If you answer a question incorrectly,"
 print("5. If you reach the $1,000,000 question"
       "and answer it correctly, you will become a millionaire!")
 print("---------------------------------------------------")
+green_text()
 input("Press Enter to start the game.")
+color_rest()
 
 
 # Game loop
@@ -94,12 +106,16 @@ def game_loop():
             nonlocal money
             money = money_increments[current_question]  # Update the money won
             print("---------------------------------------------------")
+            green_text_back()
             print("Correct answer! You've won ", money, " $")
+            color_rest()
             print("---------------------------------------------------")
             return True
         else:
             print("---------------------------------------------------")
+            red_text_back()
             print("Wrong answer! Game Over!")
+            color_rest()
             print("---------------------------------------------------")
             return False
 
@@ -107,20 +123,26 @@ def game_loop():
     # Function for getting user's answer
     def get_user_answer():
         try:
+            blue_text()
             user_answer = input("Enter your answer (a, b, c, d): ")
+            color_rest()
             if user_answer.lower() not in ['a', 'b', 'c', 'd']:
                 raise ValueError
             return user_answer.lower()
         except ValueError:
             print("---------------------------------------------------")
+            red_text()
             print("Invalid input! Please enter a valid option (a, b, c, d).")
+            color_rest()
             print("---------------------------------------------------")
 
 
     # Function for handling a single question
     def ask_question(question):
         print("---------------------------------------------------")
+        blue_text()
         print(player_name, ":", question["question"])
+        color_rest()
         print("---------------------------------------------------")
         for option in question["options"]:
             print(option)
@@ -145,37 +167,49 @@ def game_loop():
 
         # Check if the player becomes a millionaire
         if money >= 1000000:
+            green_text_back()
             print("---------------------------------------------------")
             print("Congratulations,", player_name +
                   "! You become a millionaire!")
             print("---------------------------------------------------")
+            color_rest()
             break
 
     # Game ended
+    blue_text_back()
     print("---------------------------------------------------")
     print("Game Over!")
     print("Total winnings: ", money, " $")
     print("---------------------------------------------------")
+    color_rest()
 
 
     # Ask if the player wants to play again
     while True:
         try:
+            blue_text()
             play_again = input("Do you want to play again? (y/n): ")
+            color_rest()
             play_again = play_again.lower()
             if play_again == "y":
                 game_loop()
                 break
             elif play_again == "n":
+                blue_text()
                 print("Thank you for playing Who Wants to Be a Millionaire!")
+                color_rest()
                 break
             elif play_again == 0:
+                red_text()
                 print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
+                color_rest()
             else:
                 raise ValueError
 
         except ValueError:
+            red_text()
             print("Invalid input. Please enter 'y' to play again or 'n' to quit.")
+            color_rest()
 
 
 
