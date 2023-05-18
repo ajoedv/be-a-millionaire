@@ -16,6 +16,8 @@ def get_player_name():
         print("Invalid input! Please enter a valid name (Between 3 to 10 characters).")
         return get_player_name()
 
+player_name = get_player_name()
+
 
 # welcoming
 
