@@ -1,3 +1,4 @@
+# Define a list of questions with their corresponding answers
 questions = [
     {
         "question": "What is the largest organ in the human body?",
@@ -5,123 +6,108 @@ questions = [
         "answer": "c"
     },
     {
-        "question": "Which instrument has 88 keys?",
-        "options": ["a. Piano", "b. Violin", "c. Guitar", "d. Trumpet"],
-        "answer": "a"
-    },
-    {
-        "question": "What is the national bird of the United States?",
-        "options": ["a. Bald Eagle", "b. Peacock", "c. Sparrow", "d. Penguin"],
-        "answer": "a"
-    },
-    {
-        "question": "Who is the founder of Microsoft?",
-        "options": ["a. Bill Gates", "b. Steve Jobs", "c. Mark Zuckerberg", "d. Elon Musk"],
-        "answer": "a"
-    },
-    {
-        "question": "Which continent is the largest by land area?",
-        "options": ["a. Asia", "b. Africa", "c. North America", "d. Europe"],
-        "answer": "a"
-    },
-    {
-        "question": "What is the chemical symbol for oxygen?",
-        "options": ["a. O2", "b. O", "c. H2O", "d. CO2"],
-        "answer": "b"
-    },
-    {
-        "question": "Which country is famous for the Great Wall?",
-        "options": ["a. China", "b. India", "c. Mexico", "d. Italy"],
-        "answer": "a"
-    },
-    {
-        "question": "Who wrote the book 'Harry Potter and the Philosopher's Stone'?",
-        "options": ["a. J.K. Rowling", "b. Roald Dahl", "c. C.S. Lewis", "d. Stephenie Meyer"],
-        "answer": "a"
-    },
-    {
-        "question": "What is the largest ocean in the world?",
-        "options": ["a. Pacific Ocean", "b. Atlantic Ocean", "c. Indian Ocean", "d. Arctic Ocean"],
-        "answer": "a"
-    },
-    {
-        "question": "Which country is known for the Taj Mahal?",
-        "options": ["a. India", "b. China", "c. Brazil", "d. Egypt"],
-        "answer": "a"
-    },
-    {
-        "question": "What is the symbol for the chemical element iron?",
-        "options": ["a. Fe", "b. Hg", "c. Au", "d. Ag"],
-        "answer": "a"
-    },
-    {
-        "question": "Who is the author of 'To Kill a Mockingbird'?",
-        "options": ["a. Harper Lee", "b. J.R.R. Tolkien", "c. George Orwell", "d. Ernest Hemingway"],
-        "answer": "a"
-    },
-    {
-        "question": "Which city is known as the 'Big Apple'?",
-        "options": ["a. New York City", "b. Los Angeles", "c. Chicago", "d. San Francisco"],
-        "answer": "a"
-    },
-    {
-        "question": "What is the largest desert in the world?",
-        "options": ["a. Sahara Desert", "b. Gobi Desert", "c. Kalahari Desert", "d. Atacama Desert"],
-        "answer": "a"
-    },
-    {
-        "question": "Who is the current President of the United States?",
-        "options": ["a. Joe Biden", "b. Barack Obama", "c. Donald Trump", "d. George W. Bush"],
-        "answer": "a"
-    },
-    {
-        "question": "Which country is known for the Great Barrier Reef?",
-        "options": ["a. Australia", "b. Brazil", "c. Canada", "d. Germany"],
-        "answer": "a"
-    },
-    {
-        "question": "Who invented the telephone?",
-        "options": ["a. Alexander Graham Bell", "b. Thomas Edison", "c. Isaac Newton", "d. Albert Einstein"],
-        "answer": "a"
-    },
-    {
-        "question": "What is the capital of France?",
-        "options": ["a. Paris", "b. London", "c. Rome", "d. Madrid"],
-        "answer": "a"
-    },
-    {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["a. Mars", "b. Jupiter", "c. Venus", "d. Saturn"],
+        "question": "What is the capital city of France?",
+        "options": ["a. Paris", "b. Rome", "c. London", "d. Madrid"],
         "answer": "a"
     },
     {
         "question": "Who painted the Mona Lisa?",
-        "options": ["a. Leonardo da Vinci", "b. Vincent van Gogh", "c. Pablo Picasso", "d. Michelangelo"],
-        "answer": "a"
-    },
-    {
-        "question": "Which country is known for its pyramids?",
-        "options": ["a. Egypt", "b. Brazil", "c. China", "d. Australia"],
-        "answer": "a"
+        "options": ["a. Pablo Picasso", "b. Vincent van Gogh", "c. Leonardo da Vinci", "d. Michelangelo"],
+        "answer": "c"
     },
     {
         "question": "What is the chemical symbol for gold?",
-        "options": ["a. Ag", "b. Au", "c. Fe", "d. Hg"],
+        "options": ["a. Go", "b. Gd", "c. Au", "d. Ag"],
+        "answer": "c"
+    },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "options": ["a. Mount Kilimanjaro", "b. Mount Everest", "c. Mount Fuji", "d. Mount McKinley"],
+        "answer": "b"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["a. Venus", "b. Jupiter", "c. Mars", "d. Saturn"],
+        "answer": "c"
+    },
+    {
+        "question": "In which country would you find the Great Barrier Reef?",
+        "options": ["a. India", "b. Brazil", "c. Canada", "d. Australia"],
+        "answer": "d"
+    },
+    {
+        "question": "Who is the author of the Harry Potter book series?",
+        "options": ["a. J.R.R. Tolkien", "b. J.K. Rowling", "c. George R.R. Martin", "d. Stephenie Meyer"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the chemical formula for water?",
+        "options": ["a. H2O", "b. CO2", "c. NaCl", "d. C6H12O6"],
+        "answer": "a"
+    },
+    {
+        "question": "Who was the first person to step on the moon?",
+        "options": ["a. Alan Shepard", "b. Buzz Aldrin", "c. Yuri Gagarin", "d. Neil Armstrong"],
+        "answer": "d"
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["a. Atlantic Ocean", "b. Indian Ocean", "c. Arctic Ocean", "d. Pacific Ocean"],
+        "answer": "d"
+    },
+    {
+        "question": "Which country is home to the Taj Mahal?",
+        "options": ["a. India", "b. China", "c. Egypt", "d. Italy"],
+        "answer": "a"
+    },
+    {
+        "question": "What is the highest-grossing film of all time?",
+        "options": ["a. Titanic", "b. Avatar", "c. Avengers: Endgame", "d. Star Wars: The Force Awakens"],
+        "answer": "c"
+    },
+    {
+        "question": "Which animal is known as the 'king of the jungle'?",
+        "options": ["a. Lion", "b. Tiger", "c. Elephant", "d. Gorilla"],
+        "answer": "a"
+    },
+    {
+        "question": "Who is the artist behind the famous painting 'Starry Night'?",
+        "options": ["a. Pablo Picasso", "b. Vincent van Gogh", "c. Leonardo da Vinci", "d. Michelangelo"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the symbol for the chemical element oxygen?",
+        "options": ["a. Ox", "b. Oc", "c. Om", "d. O"],
+        "answer": "d"
+    },
+    {
+        "question": "What is the longest river in the world?",
+        "options": ["a. Nile River", "b. Amazon River", "c. Yangtze River", "d. Mississippi River"],
+        "answer": "a"
+    },
+    {
+        "question": "In which year did World War II end?",
+        "options": ["a. 1943", "b. 1944", "c. 1945", "d. 1946"],
+        "answer": "c"
+    },
+    {
+        "question": "Who invented the telephone?",
+        "options": ["a. Thomas Edison", "b. Alexander Graham Bell", "c. Nikola Tesla", "d. Benjamin Franklin"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the largest continent by land area?",
+        "options": ["a. Africa", "b. Asia", "c. Europe", "d. North America"],
         "answer": "b"
     },
     {
         "question": "Who wrote the play 'Romeo and Juliet'?",
-        "options": ["a. William Shakespeare", "b. Ernest Hemingway", "c. Mark Twain", "d. Jane Austen"],
+        "options": ["a. William Shakespeare", "b. Oscar Wilde", "c. Tennessee Williams", "d. Arthur Miller"],
         "answer": "a"
     },
     {
-        "question": "Which animal is known as the 'King of the Jungle'?",
-        "options": ["a. Lion", "b. Elephant", "c. Tiger", "d. Giraffe"],
-        "answer": "a"
+        "question": "What is the chemical formula for table salt?",
+        "options": ["a. NaHCO3", "b. NaCl", "c. NaOH", "d. Na2CO3"],
+        "answer": "b"
     },
-    {
-        "question": "What is the tallest mountain in the world?",
-        "options": ["a. Mount Everest", "b. K2", "c. Mount Kilimanjaro", "d. Mount Fuji"],
-        "answer": "a"
-    }
 ]
