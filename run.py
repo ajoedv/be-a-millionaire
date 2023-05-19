@@ -117,9 +117,7 @@ def game_loop():
     def get_user_answer():
         try:
             blue_text()
-            user_answer = input("Enter your answer (a, b, c, d): \n\n")
-            print("\n\n\n\n\n")
-            print("\n\n\n\n\n")
+            user_answer = input("Enter your answer (a, b, c, d): \n\n\n\n")
             print("---------------------------------------------------")
             color_rest()
             if user_answer.lower() not in ['a', 'b', 'c', 'd']:
