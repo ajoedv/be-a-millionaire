@@ -118,6 +118,7 @@ def game_loop():
         try:
             blue_text()
             user_answer = input("Enter your answer (a, b, c, d): \n")
+            print("---------------------------------------------------")
             color_rest()
             if user_answer.lower() not in ['a', 'b', 'c', 'd']:
                 raise ValueError
