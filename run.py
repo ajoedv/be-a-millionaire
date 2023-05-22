@@ -1,6 +1,7 @@
 import random
 import questions
 from colorama import Fore, Back, Style
+import os
 
 
 # text color style functions
@@ -82,6 +83,8 @@ color_rest()
 
 # Game loop
 def game_loop():
+    # Clear the console screen
+    os.system('cls' if os.name == 'nt' else 'clear')
     # Initialize variables
     total_questions = len(questions.questions)
     current_question = 0
