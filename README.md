@@ -6,7 +6,7 @@ This is a Python program that simulates the game "Who Wants to Be a Millionaire.
 ![mockup](docs/mockup.png)
 
 
-[Play the game here](https://be-a-millionaire.herokuapp.com/)
+[Play the game here](https://be-a-millionaire-joe-p-4ee33bb0382a.herokuapp.com/)
 * note: In this document, to open any links in a new browser tab, please press CTRL + Click.*
 
 
